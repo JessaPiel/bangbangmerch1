@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-BangbangmerchApplication<bangbangmerch>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "bangtan.com.bangbangmerch.BangbangmerchApplication",
+            "projectName": "bangbangmerch",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
