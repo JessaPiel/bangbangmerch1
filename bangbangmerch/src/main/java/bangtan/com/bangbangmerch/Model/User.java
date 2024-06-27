@@ -1,21 +1,29 @@
 package bangtan.com.bangbangmerch.Model;
 
-public class UserModel {
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 
-    private int id;
+@Entity
+public class User {
+
+@Id
+@GeneratedValue
+    private Long id;
     private String name;
     private String email;
     private String password;
 
-    public UserModel(int id, String name, String email, String password){
-        this.id = id;
+    public User (){}
+
+    public User(String name, String email, String password){
         this.name = name;
         this.email = email;
         this.password = password;
     }
 
     //getters 
-    public int getId(){
+    public Long getId(){
         return id;
     }
 
@@ -31,11 +39,8 @@ public class UserModel {
         return password;
     }
 
-    //Setters
-    public void setId(int id){
-        this.id = id;
-    }
 
+    //Setters
     public void setName(String name){
         this.name = name;
     }
