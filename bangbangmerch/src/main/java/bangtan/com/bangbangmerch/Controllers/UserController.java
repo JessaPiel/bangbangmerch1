@@ -10,12 +10,14 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import bangtan.com.bangbangmerch.Model.User;
 import bangtan.com.bangbangmerch.NotFoundException.UserNotFoundException;
 import bangtan.com.bangbangmerch.repository.UserRepository;
 
 @RestController
+@RequestMapping("/api/v1/user")
 public class UserController{
     
     UserRepository repo;

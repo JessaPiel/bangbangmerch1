@@ -12,10 +12,13 @@ import org.springframework.web.bind.annotation.RestController;
 import bangtan.com.bangbangmerch.Model.OrderItem;
 import bangtan.com.bangbangmerch.NotFoundException.OrderItemNotFoundException;
 import bangtan.com.bangbangmerch.repository.OrderItemRepository;
+import org.springframework.web.bind.annotation.RequestMapping;
+
 
 
 
 @RestController
+@RequestMapping("/api/v1/orderItem")
 public class OrderItemController {
     OrderItemRepository repo;
 
